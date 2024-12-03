@@ -168,7 +168,7 @@ TBD
 TBD
 
 [[lazy-evaluation]]
-=== Lazy Evalution
+=== Lazy Evaluation
 
 If you have data where computation is circular, you will have to make
 sure you don't build an infinite loop in the data. This system has

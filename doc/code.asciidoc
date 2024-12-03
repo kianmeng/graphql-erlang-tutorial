@@ -59,7 +59,7 @@ sections for their description.
 
 === Application `sw_core`
 
-.`priv/sw.schmea`
+.`priv/sw.schema`
 
 The schema definition file which can be read by the {project}
 system. It defines the schema rules for the Star Wars API.

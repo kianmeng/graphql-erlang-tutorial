@@ -266,7 +266,7 @@ NOTE: An alternative implementation of the current object for
 Starships would be to return a `map()` which had all the relevant
 fields from the `#transport{}` and `#starship{}` rows merged. In
 short, it would be the same as if you had executed `SELECT * FROM
-Starship INNER JOIN Tranport USING (Id)`. It is worth examining if a
+Starship INNER JOIN Transport USING (Id)`. It is worth examining if a
 different representation will help in a given situation.
 
 ==== Id handling
@@ -469,7 +469,7 @@ return
 {ok, [{ok, A}, {error, Reason}, {ok, C}]}
 ----
 
-to signify that the two values `A` and `C` suceeded but `B` failed. If
+to signify that the two values `A` and `C` succeeded but `B` failed. If
 the data fetch fails as a whole you can of course fail the full field
 by returning `{error, Reason}`.
 
@@ -487,7 +487,7 @@ include::{sw_core}/src/sw_core_species.erl[tags=execute]
 ----
 
 Since the result can't fail, we wrap every result in an `{ok, EC}` to
-state that every eye colors loaded succesfully.
+state that every eye colors loaded successfully.
 
 .Alternative representation
 ****
@@ -631,7 +631,7 @@ and it won't cost bandwidth in data transfer.
 TIP: The example here describes a typical invocation: load the objects
 you operate on and make sure every object is valid. Then use
 <<authorization>> in the `_Ctx` to check if the desired operation is
-valid on the object. Next, execute a transaction and if succesful,
+valid on the object. Next, execute a transaction and if successful,
 return all the loaded objects in the *...Payload* result. This
 load-then-auth-then-txn invocation is very common in GraphQL.
 

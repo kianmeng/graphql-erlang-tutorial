@@ -130,7 +130,7 @@ connections as we are here:
 include::{sw_test}/sw_SUITE_data/advanced.query[]
 ----
 
-The `fragment` parts allows your queries to re-use different subsets
+The `fragment` parts allows your queries to reuse different subsets
 of a larger query again and again. We use this here to show off that
 capability of GraphQL. The result follows the structure of the query:
 
@@ -174,7 +174,7 @@ include::{sw_test}/sw_SUITE_data/mutation.result[]
 ----
 <1> The server reflects back the unique client-generated Id for
 correlation purposes.
-<2> The Id migth be different depending on how many *Faction* objects
+<2> The Id might be different depending on how many *Faction* objects
     you created.
 <3> We have yet to assign any starships to the faction, so the count
     is currently 0.

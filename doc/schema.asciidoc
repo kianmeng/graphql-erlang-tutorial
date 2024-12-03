@@ -203,7 +203,7 @@ result type of the given field is the return value of the mutation.
 This return type, often called the _payload_ contains other objects in
 the graph. It allows a client to run a mutation on the server side and
 then query on the data it just changed. This corresponds to the
-situtation in RESTful models where a POST provides a `location:`
+situation in RESTful models where a POST provides a `location:`
 response header containing the URI of the newly created object. But as
 we want to avoid a roundtrip, we "`bake`" the query into the mutation
 in GraphQL.
